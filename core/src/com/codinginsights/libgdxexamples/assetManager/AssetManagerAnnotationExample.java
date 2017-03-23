@@ -12,14 +12,16 @@ import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.codinginsights.libgdxexamples.configs.Config;
 
+import net.dermetfan.gdx.assets.AnnotationAssetManager;
+
 /**
  * Created by elefher on 3/23/17.
  */
 
-public class AssetManagerExample implements Screen {
+public class AssetManagerAnnotationExample implements Screen {
 
   private final Game game;
-  private final AssetManager manager;
+  private final AnnotationAssetManager manager;
 
   private OrthographicCamera camera;
   private Viewport viewport;
@@ -32,9 +34,9 @@ public class AssetManagerExample implements Screen {
   private Texture characterRun;
   private Texture character;
 
-  public AssetManagerExample(Game game){
+  public AssetManagerAnnotationExample(Game game){
 	this.game = game;
-    manager = new AssetManager();
+    manager = new AnnotationAssetManager();
   }
 
   @Override
@@ -45,12 +47,12 @@ public class AssetManagerExample implements Screen {
 
     loadAssets();
 
-    brokenRocket = manager.get(AssetDescriptors.brokenRocket);
-    rocket = manager.get(AssetDescriptors.rocket);
-    skeleton = manager.get(AssetDescriptors.skeleton);
-    nullImg = manager.get(AssetDescriptors.nullImg);
-    character = manager.get(AssetDescriptors.character);
-    characterRun = manager.get(AssetDescriptors.characterRun);
+    brokenRocket = manager.get(AssetsAnnotation.BROKENROCKET);
+    rocket = manager.get(AssetsAnnotation.ROCKET);
+    skeleton = manager.get(AssetsAnnotation.SKELETON);
+    nullImg = manager.get(AssetsAnnotation.NULLIMG);
+    character = manager.get(AssetsAnnotation.CHARACTER);
+    characterRun = manager.get(AssetsAnnotation.CHARACTERRUN);
   }
 
   @Override
@@ -101,13 +103,7 @@ public class AssetManagerExample implements Screen {
   }
 
   private void loadAssets(){
-    manager.load(AssetDescriptors.brokenRocket);
-    manager.load(AssetDescriptors.character);
-    manager.load(AssetDescriptors.characterRun);
-    manager.load(AssetDescriptors.nullImg);
-    manager.load(AssetDescriptors.rocket);
-    manager.load(AssetDescriptors.skeleton);
-
+    manager.load(AssetsAnnotation.class);
     manager.finishLoading();
   }
 
