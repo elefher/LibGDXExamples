@@ -16,7 +16,6 @@ public class AssetDescriptors {
   public static final AssetDescriptor<Texture> characterRun = new AssetDescriptor<Texture>(Assets.CHARACTERRUN, Texture.class);
   public static final AssetDescriptor<Texture> nullImg = new AssetDescriptor<Texture>(Assets.NULLIMG, Texture.class);
   public static final AssetDescriptor<Texture> rocket = new AssetDescriptor<Texture>(Assets.ROCKET, Texture.class);
-  public static final AssetDescriptor<BitmapFont> FONT = new AssetDescriptor<BitmapFont>(Assets.FONT, BitmapFont.class);
 
   private AssetDescriptors(){}
 }

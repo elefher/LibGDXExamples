@@ -1,6 +1,8 @@
 package com.codinginsights.libgdxexamples.assetManager;
 
 
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+
 /**
  * Created by elefher on 3/23/17.
  */
@@ -13,7 +15,6 @@ public class Assets {
   public static final String CHARACTERRUN = "images/characterrun.png";
   public static final String CHARACTER = "images/character.png";
   public static final String BROKENROCKET = "images/brokenrocket.png";
-  public static final String FONT = "arial.ttf";
 
   private Assets(){}
 
