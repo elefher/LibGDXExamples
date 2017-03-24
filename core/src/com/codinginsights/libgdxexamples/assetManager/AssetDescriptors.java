@@ -2,6 +2,7 @@ package com.codinginsights.libgdxexamples.assetManager;
 
 import com.badlogic.gdx.assets.AssetDescriptor;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 
 /**
  * Created by elefher on 3/23/17.
@@ -15,6 +16,7 @@ public class AssetDescriptors {
   public static final AssetDescriptor<Texture> characterRun = new AssetDescriptor<Texture>(Assets.CHARACTERRUN, Texture.class);
   public static final AssetDescriptor<Texture> nullImg = new AssetDescriptor<Texture>(Assets.NULLIMG, Texture.class);
   public static final AssetDescriptor<Texture> rocket = new AssetDescriptor<Texture>(Assets.ROCKET, Texture.class);
+  public static final AssetDescriptor<BitmapFont> FONT = new AssetDescriptor<BitmapFont>(Assets.FONT, BitmapFont.class);
 
   private AssetDescriptors(){}
 }
