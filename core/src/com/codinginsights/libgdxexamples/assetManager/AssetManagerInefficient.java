@@ -31,6 +31,7 @@ public class AssetManagerInefficient implements Screen {
   private Texture characterRun;
   private Texture character;
 
+
   public AssetManagerInefficient(Game game){
 	this.game = game;
   }

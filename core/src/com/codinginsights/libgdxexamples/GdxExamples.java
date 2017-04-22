@@ -19,7 +19,9 @@ public class GdxExamples extends Game {
 
 	batch = new SpriteBatch();
 
-	setScreen(new AssetManagerUpdateExample(this));
+//	setScreen(new AssetManagerUpdateExample(this));
+//	setScreen(new AssetManagerInefficient(this));
+	setScreen(new AssetManagerExample(this));
   }
 
   @Override

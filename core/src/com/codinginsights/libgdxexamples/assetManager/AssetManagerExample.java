@@ -74,32 +74,6 @@ public class AssetManagerExample implements Screen {
     batch.end();
   }
 
-  @Override
-  public void resize(int width, int height) {
-    viewport.update(width, height, true);
-  }
-
-  @Override
-  public void pause() {
-
-  }
-
-  @Override
-  public void resume() {
-
-  }
-
-  @Override
-  public void hide() {
-
-  }
-
-  @Override
-  public void dispose() {
-    batch.dispose();
-    manager.dispose();
-  }
-
   private void loadAssets(){
     manager.load(AssetDescriptors.brokenRocket);
     manager.load(AssetDescriptors.character);
@@ -111,4 +85,23 @@ public class AssetManagerExample implements Screen {
     manager.finishLoading();
   }
 
+  @Override
+  public void resize(int width, int height) {
+    viewport.update(width, height, true);
+  }
+
+  @Override
+  public void pause() {}
+
+  @Override
+  public void resume() {}
+
+  @Override
+  public void hide() {}
+
+  @Override
+  public void dispose() {
+    batch.dispose();
+    manager.dispose();
+  }
 }

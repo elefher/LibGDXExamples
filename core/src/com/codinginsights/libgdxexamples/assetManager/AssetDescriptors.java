@@ -2,7 +2,6 @@ package com.codinginsights.libgdxexamples.assetManager;
 
 import com.badlogic.gdx.assets.AssetDescriptor;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
 
 /**
  * Created by elefher on 3/23/17.
