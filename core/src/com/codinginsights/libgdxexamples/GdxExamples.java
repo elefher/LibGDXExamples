@@ -4,10 +4,7 @@ import com.badlogic.gdx.Application;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.codinginsights.libgdxexamples.assetManager.AssetManagerAnnotationExample;
-import com.codinginsights.libgdxexamples.assetManager.AssetManagerExample;
-import com.codinginsights.libgdxexamples.assetManager.AssetManagerInefficient;
-import com.codinginsights.libgdxexamples.assetManager.AssetManagerUpdateExample;
+import com.codinginsights.libgdxexamples.Scene2D.ActorExample;
 
 public class GdxExamples extends Game {
 
@@ -21,7 +18,8 @@ public class GdxExamples extends Game {
 
 //	setScreen(new AssetManagerUpdateExample(this));
 //	setScreen(new AssetManagerInefficient(this));
-	setScreen(new AssetManagerExample(this));
+//	setScreen(new AssetManagerExample(this));
+	setScreen(new ActorExample(this));
   }
 
   @Override
